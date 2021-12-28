@@ -1,0 +1,20 @@
+.btn{
+    @for $i from 1 through 20 {
+        &-w#{$i} {
+            width: 10px * $i;
+        }
+    }
+
+    @for $i from 1 through 20 {
+        &-h#{$i} {
+            height: 5px * $i;
+        }
+    }
+
+}
+
+button{
+    border:none;
+    border-radius: 5px;
+    padding: 6px;
+}

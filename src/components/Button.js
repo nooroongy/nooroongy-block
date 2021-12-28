@@ -1,10 +1,10 @@
 
 import React from 'react';
-import '../css/Button.css'
+import '../css/button.css'
 
-const Button = ({children}) =>{
+const Button = ({children,w,h}) =>{
     return (
-        <button>{children}</button>
+        <button className={`btn-w${w} btn-h${h}`}>{children}</button>
     )
 }
 
